@@ -1,36 +1,5 @@
-/*
-Template Name: Callie HTML Template
-Author: yaminncco
+/* DEV JOB */
 
-Colors:
-	Body 		  : #505050
-	Headers 	: #11151c
-	Primary 	: #ee4266
-	Dark 		  : #1b1c1e
-	Grey 		  : #e8eaed #97989b #323335
-
-Fonts: Montserrat & Muli
-
-Table OF Contents
-------------------------------------
-GENERAL
-NAVIGATION
-PAGE HEADER
-POST
-POST PAGE
-ASIDE
-FOOTER
-RESPONSIVE
-------------------------------------*/
-
-/*=========================================================
-	GENERAL
-===========================================================*/
-
-/*----------------------------*\
-	typography
-\*----------------------------*/
-/*CAROUSAL*/
 .carousel-item {
   height: 65vh;
   min-height: 350px;
@@ -1057,6 +1026,7 @@ textarea.input {
   display: block;
   width: 100px;
   overflow: hidden;
+  
 }
 
 .post-nav .prev-post .post-img {
@@ -1522,6 +1492,7 @@ textarea.input {
     text-align: left;
     margin-bottom: 30px;
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -1561,6 +1532,11 @@ textarea.input {
   .page-header-bg{
     max-height: 630px;
     max-width:800px;
+  }
+}
+@media only screen and (min-width:993px){
+  .image{
+    height: 210px;
   }
 }
 
@@ -1834,7 +1810,7 @@ textarea.input {
   .contact_us .emailArea {
     width: 100%;
   }
-  ..contact_us .phoneArea {
+  .contact_us .phoneArea {
     width: 100%;
   }
 }
@@ -2076,10 +2052,3 @@ body {
   }
 }
 
-/* ALERT SECTION */
-.alert-message{
-  font-family: "Roboto";
-  font-weight: 400;
-  color: red;
-  font-size: 15px;
-}

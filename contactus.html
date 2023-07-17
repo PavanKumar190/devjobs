@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DEV JOB</title>
+<title>CONTACTUS | DEVJOB</title>
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
 
@@ -46,7 +46,7 @@
 
 
 <div class="nav-logo">
-<a href="index.html" class="logo">DEVJOBS</a>
+<a href="index.html" class="logo">DEVJOB</a>
 </div>
 
 
@@ -77,9 +77,9 @@
 <li><a href="index.html#hiring" target="_blank">jobs</a></li>
 <li><a href="promocode.html" target="_blank">PROMO CODE'S</a></li>
 <li><a href="cryptoairdrop.html" target="_blank">CRYPTO AIRDROP</a></li>
-<li><a href="contactus.html" target="_blank">About Us</a></li>
+<li><a href="aboutus.html" target="_blank">About Us</a></li>
 <li><a href="contactus.html" target="_parent">Contact Us</a></li>
-<li><a href="contactus.html" target="_blank">Advertise</a></li>
+<li><a href="advertise.html" target="_blank">Advertise</a></li>
 </ul>
 
 </div>
@@ -96,9 +96,9 @@
 <li><a href="cryptoairdrop.html" target="_blank">CRYPTO AIRDROP</a></li>
 </ul>
 </li>
-<li><a href="contactus.html" target="_blank">About Us</a></li>
+<li><a href="aboutus.html" target="_blank">About Us</a></li>
 <li><a href="contactus.html" target="_parent">Contact Us</a></li>
-<li><a href="contactus.html" target="_blank">Advertise</a></li>
+<li><a href="advertise.html" target="_blank">Advertise</a></li>
 </ul>
 <button class="nav-close nav-aside-close"><span></span></button>
 </div>
@@ -118,7 +118,7 @@
         <p class="text-blk heading">
           Contact Us
         </p>
-        <form class="formTable" action = "https://sheetdb.io/api/v1/b0fyy115h2l83" method="POST" id="form">
+        <form class="formTable"  id = "sheetdb-form" action="https://sheetdb.io/api/v1/criy3n2um48yc" method="POST" >
           <div class="firstRow">
             <div class="fullNameArea">
               <p class="cardHead">
@@ -175,7 +175,7 @@
     <div class="container">
     
      <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-5">
     <div class="footer-widget">
      <div class="footer-logo">
     <a href="index.html" style = "font-weight: bold; font-size:25px;">Dev Job</a>
@@ -190,13 +190,21 @@
     </div>
     </div>
     <div class="col-md-4">
+      <div class="footer-widget">
+        <div class = "counter">
+        <script type="text/javascript" src="https://www.counters-free.net/count/crsg"></script><br>
+        <a href='https://www.versicherungen.at/'>Versicherungsvergleich</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=90e935907a57897466c14a61c280a22c4f55ed8f'></script>
+        </div>
+      </div>
+      </div>
+    <div class="col-md-3">
     <div class="footer-widget">
     <h3 class="footer-title">For Updates</h3>
     <div class="newsletter-widget">
-    <form action = "https://sheetdb.io/api/v1/91li03p0kewns" method = "POST">
+    <form action = "https://sheetdb.io/api/v1/9c97jhdneayjv" method = "POST" id = "subform">
     <p>For Latest Job Notifications Subscribe</p>
-    <input class="input" name="email" placeholder="Enter Your Email">
-    <button class="primary-button">Subscribe</button>
+    <input class="input" name="email" type = "text" placeholder="Enter Your Email">
+    <button class="primary-button" type = "submit" onclick = "validation()" >Subscribe</button>
     </form>
     </div>
     </div>
@@ -208,10 +216,10 @@
     <div class="col-md-6 col-md-push-6">
     <ul class="footer-nav">
     <li><a href="index.html" target="_blank">Home</a></li>
-    <li><a href="contactus.html" target="_blank">About Us</a></li>
+    <li><a href="aboutus.html" target="_blank">About Us</a></li>
     <li><a href="contactus.html" target="_parent">Contact Us</a></li>
-    <li><a href="contactus.html" target="_blank">Advertise</a></li>
-    <li><a href="#" target="_blank">Privacy</a></li>
+    <li><a href="advertise.html" target="_blank">Advertise</a></li>
+    <li><a href="#" >Privacy</a></li>
     </ul>
     </div>
     <div class="col-md-6 col-md-pull-6">
@@ -235,7 +243,7 @@
 <script src="js/main.js"></script>
 
 
-<script>
+ <!-- <script>
   function validation(){
 
     var name = $("#fullName").val();
@@ -247,53 +255,59 @@
       swal({
         title: "Fields Empty!!",
         text: "Please check the missing field!!",
-        icon: "Warning",
+  
         button: "Ok!",
       });
     }
     else{
       swal({
         title: "SuccessFully Submitted",
-        icon: "Success",
         button: "Yes!!",
       }); 
     } 
   }   
   
 
-</script>
-<script>
-  let name = document.getElementById("fullName");
-  let email = document.getElementById("email");
-  let message = document.getElementById("message");
-  let form = document.getElementById("form");
-  let phone = document.getElementById("phone");
-
-  form.addEventListener("submit", function(event){
-    if (name.value === "" || email.value === "" || message.value === "" || phone.value === ""){
-      event.preventDefault();
-    }else{
-      var form = document.getElementById('form');
-        form.addEventListener("submit", event => {
-          event.preventDefault();
-          fetch(form.action, {
-            method : "POST",
-            body: new FormData(document.getElementById("form")),
-          }).then(
-            response => response.json()
-          ).then((html) => {
-            // you can put any JS code here
-            
-          });
-        });
-    }
-  })
-
+</script> -->
+<!-- <script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      
+    });
+  });
+</script> -->
+<!-- <script>
+  function SubForm (){
+      $.ajax({
+          url:'https://www.apispreadsheets.com/table/bNoD2gjJqMrqCeTc/',
+          type:'post',
+          data:$("#myForm").serializeArray(),
+          accessKey: '1FaYWd8VezOlWV1MW_MALiUUSjT79zfOFhma3DmPX8A0',
+          secretKey: '1FaYWd8VezOlWV1MW_MALiUUSjT79zfOFhma3DmPX8A0',
+          success: function(){
+            alert("Form Data Submitted :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+      });
+  }
+  </script> -->
   
-</script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src=
-"https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
         </script>
 
 </body>
