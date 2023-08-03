@@ -1,3 +1,60 @@
+.pagination{
+  display:flex;
+  align-items: center;
+  background: #fff;
+  color: #383838;
+  padding: 10px 40px;
+  border-radius: 6px;
+}
+.pagination ul{
+  margin: 20px 30px;
+}
+.pagination ul li{
+  display: inline-block;
+  margin: 0 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 45px;
+  cursor: pointer;
+  background-position: 0 -45px;
+  transition: background-position 0.5s;
+}
+.pagination ul li a{
+  text-decoration: none;
+  
+}
+.pagination ul li.active{
+  color: #fff;
+  background-image: linear-gradient(#ff4568,#ff4568 );
+  background-repeat: no-repeat;
+  background-position:0 0 ;
+}
+
+.btn1, .btn2{
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #383838;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn1 img{
+  width: 24px;
+  margin-right: 15px;
+}
+.btn2 img{
+  width: 24px;
+  margin-left: 15px;
+  transform: rotate(180deg);
+}
+
 /* DEV JOB */
 
 .carousel-item {
@@ -831,7 +888,7 @@ textarea.input {
   bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 28, 30, 0)), color-stop(90%, rgba(27, 28, 30, 0.8)));
   background: linear-gradient(180deg, rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 0.8) 90%);
-  
+  width: 100%;
 }
 
 .post.post-thumb .post-body {
@@ -848,7 +905,7 @@ textarea.input {
 }
 
 .post.post-thumb .post-title a:hover, .post.post-thumb .post-title a:focus {
-  color: #ee4266;
+  color:;
 }
 
 .post.post-thumb .post-meta li {
@@ -1530,13 +1587,30 @@ textarea.input {
     margin-left: 25px;
   }
   .page-header-bg{
-    max-height: 630px;
-    max-width:800px;
+    min-height: 100px;
+    max-height:600px;
+    min-width:70px;
+    min-width: 800px;
+
+  }
+  .post .post-title {
+    font-size: 13px;
   }
 }
-@media only screen and (min-width:993px){
+@media only screen and (min-width:992px){
   .image{
     height: 210px;
+  }
+  
+}
+@media only screen and (min-width:1200px){
+  .h-image{
+    height: 378px;
+  }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+  .h-image{
+    height: 313px;
   }
 }
 

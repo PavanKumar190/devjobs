@@ -81,6 +81,23 @@ s0.parentNode.insertBefore(s1,s0);
   
 
 
+  
+
+  
+  var form = document.getElementById("form");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert("success")
+    });
+  });
+
   var form = document.getElementById("sheetdb-form");
   form.addEventListener("submit", e => {
     e.preventDefault();
@@ -91,39 +108,12 @@ s0.parentNode.insertBefore(s1,s0);
         response => response.json()
     ).then((html) => {
       // you can put any JS code here
-      
-    });
-  });
-
-  
-  var form = document.getElementById("subform");
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("subform")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      
+      alert("success")
     });
   });
 
 
   
-     let url = 'https://api.sheety.co/fd0f3ef445e9ba4c373d5accfec82ada/subscription/sheet1';
-  let body = {
-    sheet1: {
-      email
-    }
-  }
-  fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(body)
-  })
-  .then((response) => response.json())
-  .then(json => {
     
-  });
+  
   
