@@ -27,7 +27,15 @@
 
 
 <body>
-
+    <div id="ac-wrapper">
+        <div id="popup">
+            <div class = "flag-container">
+                <img  class = "flag" src = "national-flag-of-india-india.gif">
+                <input type="submit" class = "input-btn" name="Close" value="close" onClick="PopUp()" />
+            </div>
+        </div>
+    </div>
+    
 <header id="header">
 
 <div id="nav">
@@ -44,13 +52,13 @@
 
 
 <div class="nav-logo">
-<a href="index.html" class="logo">DEVJOB</a>
+<a href="index.html" class="logo">DEVJOB </a>
 </div>
 
 
 <div class="nav-btns">
 <button class="aside-btn"><i class="fa fa-bars"></i></button>
-<button class="search-btn"><i class="fa fa-search"></i></button>
+<!-- <button class="search-btn"><i class="fa fa-search"></i></button> -->
 <div id="nav-search">
 <form>
 <input class="input" id="searchbar" onkeyup="search()" name="search" placeholder="Enter your search...">
@@ -1360,12 +1368,15 @@
         }
     }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+
 <script>
     
         var items = $('.job-card');
