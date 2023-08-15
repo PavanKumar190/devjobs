@@ -9,32 +9,27 @@
 }
 .flag{
   height: 300px;
+  margin-top: 5px;
 }
 .flag-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-evenly;
 }
 .input-btn{
   color:white;
   background-color: #0077b5;
   border: none;
-  
+  margin-top: 20px;
 }
 #popup {
   width: 555px;
-  height: 375px;
+  height: 390px;
   background: #FFFFFF;
-  border: 5px solid #000;
-  border-radius: 25px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  box-shadow: #64686e 0px 0px 3px 3px;
-  -moz-box-shadow: #64686e 0px 0px 3px 3px;
-  -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+
   position: relative;
-  top: 150px; left: 375px;
+  top: 150px; left: 490px;
 }
 @media only screen and (max-width: 670px){
   #popup{
@@ -43,7 +38,7 @@
     min-width: 200px;
     min-height: 180px;
     background: #FFFFFF;
-    border: 5px solid #000;
+
     top: 150px; left: 60px;
   }
   .flag{
